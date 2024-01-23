@@ -1,0 +1,15 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22 ene 2024, 18:13:22
+    Author     : ene
+*/
+.pyro {-fx-background-image: url(img/pyro.png)}
+.hydro {-fx-background-image: url(img/hydro.png)}
+.cryo {-fx-background-image: url(img/cryo.png)}
+.dendro {-fx-background-image: url(img/dendro.png)}
+.electro {-fx-background-image: url(img/electro.png)}
+.anemo {-fx-background-image: url(img/anemo.png)}
+.geo {-fx-background-image: url(img/geo.png)}

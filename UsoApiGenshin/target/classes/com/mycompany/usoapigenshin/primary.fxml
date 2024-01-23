@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="primary" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.usoapigenshin.PrimaryController">
+   <children>
+      <ToolBar fx:id="toolBar" layoutY="6.0" prefHeight="59.0" prefWidth="370.0">
+        <items>
+            <Button fx:id="Pyro" mnemonicParsing="false" onAction="#pulsarPyro" prefHeight="49.0" prefWidth="47.0" styleClass="pyro" stylesheets="@../styles/imgButton.css" />
+            <Button fx:id="Hydro" mnemonicParsing="false" onAction="#pulsarHydro" prefHeight="49.0" prefWidth="47.0" styleClass="hydro" stylesheets="@../styles/imgButton.css" />
+            <Button fx:id="Dendro" mnemonicParsing="false" onAction="#pulsarDendro" prefHeight="49.0" prefWidth="47.0" styleClass="dendro" stylesheets="@../styles/imgButton.css" />
+            <Button fx:id="Cryo" mnemonicParsing="false" onAction="#pulsarCryo" prefHeight="49.0" prefWidth="47.0" styleClass="cryo" stylesheets="@../styles/imgButton.css" />
+            <Button fx:id="Electro" mnemonicParsing="false" onAction="#pulsarElectro" prefHeight="49.0" prefWidth="47.0" styleClass="electro" stylesheets="@../styles/imgButton.css" />
+            <Button fx:id="Geo" mnemonicParsing="false" onAction="#pulsarGeo" prefHeight="49.0" prefWidth="47.0" styleClass="geo" stylesheets="@../styles/imgButton.css" />
+            <Button fx:id="Anemo" mnemonicParsing="false" onAction="#pulsarAnemo" prefHeight="49.0" prefWidth="47.0" styleClass="anemo" stylesheets="@../styles/imgButton.css" />
+        </items>
+      </ToolBar>
+      <ChoiceBox fx:id="armas" layoutX="386.0" layoutY="24.0" prefHeight="24.0" prefWidth="198.0" />
+      <Label fx:id="page" layoutX="291.0" layoutY="354.0" prefHeight="16.0" prefWidth="19.0" />
+      <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" layoutX="14.0" layoutY="79.0" prefHeight="252.0" prefWidth="578.0">
+         <content>
+            <TextArea fx:id="contenido" editable="false" prefHeight="103.0" prefWidth="576.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="next" layoutX="321.0" layoutY="350.0" mnemonicParsing="false" onAction="#pulsarSiguiente" prefHeight="24.0" prefWidth="47.0" text="&gt;&gt;" />
+      <Button fx:id="back" layoutX="229.0" layoutY="350.0" mnemonicParsing="false" onAction="#pulsarAnterior" prefHeight="24.0" prefWidth="47.0" text="&lt;&lt;" />
+      <Button fx:id="search" layoutX="510.0" layoutY="358.0" mnemonicParsing="false" onAction="#pulsarBuscar" text="Buscar" />
+   </children>
+</Pane>
